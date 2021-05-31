@@ -1,0 +1,54 @@
+
+  <ion-menu contentId="main-content">
+    <ion-content>
+      <ion-list id="inbox-list">
+        <ion-list-header>
+          <ion-avatar>
+            <img src="https://i.pinimg.com/originals/ff/fc/d6/fffcd600ff8883b975409b2204fdb59e.jpg">
+          </ion-avatar>
+        </ion-list-header>
+        <ion-list-header>Convoca Sport</ion-list-header>
+        
+        <ion-note>Un evento para tu afición</ion-note>
+
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+          <ion-item (click)="openEnd()" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+            <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+            <ion-label>{{ p.title }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <ion-list id="labels-list">
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+
+
+
+
+<ion-tabs>
+
+
+    <ion-tab-bar slot="bottom" color="primary">
+  
+      <ion-tab-button tab="Usuarios">
+        <ion-icon name="people"></ion-icon>
+        <ion-label>Lista de Miembros</ion-label>
+      </ion-tab-button>
+  
+      
+  
+  
+      <ion-tab-button tab="New-Usuario">
+        <ion-icon name="person-add"></ion-icon>
+        <ion-label>Agregar Miembros</ion-label>
+      </ion-tab-button>
+  
+  
+    </ion-tab-bar>
+  
+  
+</ion-tabs>

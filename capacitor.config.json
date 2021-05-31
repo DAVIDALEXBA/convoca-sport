@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "convocaSport",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

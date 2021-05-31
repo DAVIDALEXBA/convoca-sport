@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Convocatoria {{modalNombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <img src="https://userscontent2.emaze.com/images/55d05c40-7f1c-444b-8bb2-cd7f034ca728/713e037d0734fa8d691f936a2539722d.png" />
+    <ion-card-header>
+      <ion-card-subtitle>{{modalDeporte}}</ion-card-subtitle>
+      <ion-card-title>{{modalNombre}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{modalDesc}}
+      <br>
+      <b>Fecha:</b> {{modalFecha}}
+      <br>
+      <b>Lugar:</b> {{modalLugar}}
+    </ion-card-content>
+  </ion-card>
+
+   <ion-button expand="block" fill="outline" (click)="closeModal()"><ion-icon slot="icon-only" name="close"></ion-icon> Cerrar</ion-button>
+
+</ion-content>

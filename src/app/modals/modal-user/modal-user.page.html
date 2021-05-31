@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Usuario {{modalNombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <center><img src="https://electronicssoftware.net/wp-content/uploads/user.png" /></center>
+    <ion-card-header>
+      <ion-card-subtitle>{{rol}}</ion-card-subtitle>
+      <ion-card-title>{{nombre}} {{apellidos}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <b>Dirección:</b> {{direccion}}
+      <br>
+      <b>Telefono:</b> {{telefono}}
+      <br>
+      <b>Correo:</b> {{correo}}
+      <br>
+      <b>Usuario:</b> {{usuario}}
+    </ion-card-content>
+  </ion-card>
+
+   <ion-button expand="block" fill="outline" (click)="closeModal()"><ion-icon slot="icon-only" name="close"></ion-icon> Cerrar</ion-button>
+
+</ion-content>
